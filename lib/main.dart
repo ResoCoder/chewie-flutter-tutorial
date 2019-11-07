@@ -25,6 +25,7 @@ class MyHomePage extends StatelessWidget {
         title: Text('Video Player'),
       ),
       body: ListView(
+        cacheExtent: 100000,
         children: <Widget>[
           ChewieListItem(
             videoPlayerController: VideoPlayerController.asset(
